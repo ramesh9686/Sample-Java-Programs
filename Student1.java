@@ -1,39 +1,181 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package ramesh;
+package Student;
 
-/**
- *
- * @author DELL
- */
-import java.util.*;
-public class Student1 {
-        int roll_num;
-    String Name;
-    int phone_num;
-    String address;
-    void get()
-    {
-        Scanner inp=new Scanner(System.in);
-        System.out.print("Enter the name: ");
-        Name=inp.next();
-        System.out.print("Enter the roll number: ");
-        roll_num=inp.nextInt();
-        System.out.print
-    }
-    void display()
-    {
-        System.out.println("Roll number: "+roll_num);
-        System.out.println(" Name: "+Name);  
-    }
-    public static void main(String args[])
-    {
-        Student std=new Student();
-        std.get();
-        std.display();
-    } 
+public class Student1
+
+{
+
+ int age;
+
+ char sex;
+
+ String name,add,fn,mn;
+
+public Student1(int e,char f,String a,String b,String c,String d)
+
+ {
+
+  age=e;
+
+  sex=f;
+
+  name=a;
+
+  add=d;
+
+  fn=b;
+
+  mn=c;
+
+ }
+
+
+
+
+public void display()
+
+ {
+
+   System.out.println("STUDENT PERSONAL DETAILS");
+
+   System.out.println("Name of the student is: "+name);
+
+   System.out.println("Age="+age);
+
+   System.out.println("Student is "+sex);  
+
+   System.out.println("Address of the student is: "+add);
+
+   System.out.println("Father's name: "+fn);
+
+   System.out.println("Mother'sname is: "+mn);
+
+ }
+
 }
-    
+
+// class for student acedamic details(in package FIRST)
+
+
+
+class Acedamicinfo
+
+{
+
+  int avg,att,rollno;
+
+ 
+
+  public Acedamicinfo(int f,int g,int h)
+
+  {
+
+  
+
+   avg=f;
+
+   att=g;
+
+   rollno=h;
+
+   }
+
+ public void display2()
+
+ {
+
+  
+
+   System.out.println("STUDENT EDUCATIONAL DETAILS");
+
+  System.out.println("Roll no of the student "+rollno);
+
+   System.out.println("Average of Marks of student= "+avg);
+
+   System.out.println("Attendance of student ="+att+"%");
+
+  
+
+   }
+
+}
+
+// class for faculty details(in package second)
+
+
+
+class Teacherinfo
+
+{
+
+  String name,des,pos;
+
+ 
+
+  public Teacherinfo(String n,String d,String p)
+
+  {
+
+  
+
+ name=n;
+
+des=d;
+
+pos=p;
+
+   }
+
+ public void display()
+
+ {
+
+  
+
+   System.out.println("STAFF  DETAILS");
+
+  System.out.println("Name of the Member "+name);
+
+   System.out.println("Designation= "+des);
+
+   System.out.println("His Posistion::"+pos);
+
+  
+
+   }
+
+}
+
+// MAIN CLASS
+
+import Student.*;
+
+
+
+
+
+class PackageDemo
+
+{
+
+ public static void main(String args[])
+
+ {
+
+  
+
+Student.1=new Student.Student1(18,'M',"PETER","Mr. JOHN","Mrs.MARY","VIZAG");
+
+  a.display();
+
+  Student.Acedamicinfo de= new Student.Acedamicinfo(499,98,1248);
+
+   de.display2();
+
+  Student.Teacherinfo b=new Student.Teacherinfo("DAVID","Faculty","Professor");
+
+  b.display();
+
+}
+
+}
+
